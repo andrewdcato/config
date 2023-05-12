@@ -30,3 +30,5 @@
   defaultBranch = main
 [gpg]
 	format = ssh
+[commit]
+	gpgsign = true
