@@ -31,6 +31,9 @@ local options = {
 	-- completeopt settings
 	completeopt = { "menuone", "noselect", "noinsert" },
 	shortmess = vim.opt.shortmess + { c = true },
+	-- modeline
+	modeline = true,
+	modelines = 5,
 }
 
 for key, value in pairs(options) do
