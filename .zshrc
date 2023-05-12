@@ -140,8 +140,8 @@ function killport() {
 }
 
 # Mongo Aliases
-alias mongoProd="mongo 'mongodb+srv://lms-prod.h69c1.mongodb.net/lms-prod' --username acato"
-alias mongoDev="mongo 'mongodb+srv://lms-dev.msr1d.mongodb.net/lms-dev' --username acato"
+alias mongoProd="mongosh 'mongodb+srv://lms-prod.h69c1.mongodb.net/lms-prod' --username acato"
+alias mongoDev="mongosh 'mongodb+srv://lms-dev.msr1d.mongodb.net/lms-dev' --username acato"
 
 # Force NVM to load the specified version of Node
 autoload -U add-zsh-hook
