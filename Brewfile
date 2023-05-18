@@ -73,6 +73,7 @@ brew "redis", restart_service: true
 brew "ripgrep"
 brew "sdl2"
 brew "spaceship"
+brew "starship"
 brew "stylua"
 brew "subversion"
 brew "telnet"
@@ -139,3 +140,4 @@ mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Parcel", id: 639968404
