@@ -1,4 +1,5 @@
 tap "esolitos/ipa"
+tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -77,7 +78,9 @@ brew "starship"
 brew "stylua"
 brew "subversion"
 brew "telnet"
-brew "terraform"
+brew "terraform", link: false
+brew "tfenv"
+brew "tflint"
 brew "tmux"
 brew "tokei"
 brew "trash"
@@ -89,6 +92,7 @@ brew "zsh-autosuggestions"
 brew "zsh-completions"
 brew "zsh-syntax-highlighting"
 brew "esolitos/ipa/sshpass"
+brew "hashicorp/tap/terraform-ls"
 brew "koekeishiya/formulae/yabai", args: ["HEAD"]
 brew "mongodb/brew/mongodb-community@4.4", link: true
 brew "teamookla/speedtest/speedtest"
@@ -137,6 +141,7 @@ mas "1Password for Safari", id: 1569813296
 mas "Fantastical", id: 975937182
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
+mas "Ivory", id: 6444602274
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
