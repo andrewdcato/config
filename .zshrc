@@ -10,10 +10,6 @@ export ANS_DIR="$HOME/surety/ansible"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Load homebrew-managed extensions
-source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 # Use PyEnv instead of system python
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
@@ -141,3 +137,12 @@ load-nvmrc
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 
+# Apply the proper rice
+source $ZSH/custom/themes/catppuccin_macchiato-zsh-syntax-highlighting.zsh
+
+# Load homebrew-managed extensions
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/Cellar/tfenv/3.0.0/versions/1.4.6/terraform terraform
