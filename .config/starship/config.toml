@@ -16,10 +16,17 @@ vicmd_symbol = "[](green)"
 truncation_length = 4
 style = "bold teal"
 
-
-# Disable the package module, hiding it from the prompt completely
 [package]
 disabled = false
+display_private = true
+format = 'is [$symbol $version]($style) '
+
+[python]
+pyenv_version_name = true
+detect_extensions = []
+
+[terraform]
+format = 'via [$symbol $version]($style)'
 
 # palette tables should be last in the config ⚓️
 [palettes.catppuccin_macchiato]
