@@ -167,6 +167,8 @@ return packer.startup(function(use)
 
 	-- Additional languages
 	use("digitaltoad/vim-pug")
+	use("pearofducks/ansible-vim")
+	use("hashivim/vim-terraform")
 
 	if packer_bootstrap then
 		require("packer").sync()

@@ -31,6 +31,7 @@ local servers = {
 	"rust_analyzer",
 	"tailwindcss",
 	"terraformls",
+	"tflint",
 	"tsserver",
 	"yamlls",
 }
