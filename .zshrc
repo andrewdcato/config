@@ -1,5 +1,5 @@
 # Set a few defaults to our shell.
-export ZSH="/Users/andrewcato/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 export XDG_CONFIG_HOME="$HOME/.config"
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/config.toml"
 export DEFAULT_USER="andrewcato"
