@@ -1,0 +1,6 @@
+.cfg
+
+.oh-my-zsh/*
+!.oh-my-zsh/custom/plugins/*
+!.oh-my-zsh/custom/themes/*
+
