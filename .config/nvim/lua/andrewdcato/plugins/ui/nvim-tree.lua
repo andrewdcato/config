@@ -124,6 +124,11 @@ return nvimtree.setup({
 	view = {
 		adaptive_size = true,
 		side = "left",
+		mappings = {
+			list = {
+				{ key = "v", cb = tree_cb("vsplit") },
+			},
+		},
 	},
 	git = { ignore = false }, -- show .gitignore-ed files
 	diagnostics = {
