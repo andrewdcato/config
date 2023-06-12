@@ -7,6 +7,7 @@ export EDITOR="vim"
 export PYENV_ROOT="$HOME/.pyenv"
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 export ANS_DIR="$HOME/surety/ansible"
+export SSH_AUTH_SOCK="$HOME/.1passwword/agent.sock"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
@@ -15,11 +16,11 @@ command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 # Hack for running mongodb@3.4 as 'mongo'
-export PATH="/usr/local/opt/mongodb@4.0/bin:$PATH"
+export PATH="/opt/homebrew/opt/mongodb-community@4.4/bin:$PATH"
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PATH="${PATH}:${HOME}/.local/bin/"
 
-export PATH=$HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
+export PATH="$HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH"
 
 # OMZ customization
 DISABLE_AUTO_TITLE="false"
