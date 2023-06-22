@@ -7,7 +7,7 @@ export EDITOR="vim"
 export PYENV_ROOT="$HOME/.pyenv"
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 export ANS_DIR="$HOME/surety/ansible"
-export SSH_AUTH_SOCK="$HOME/.1passwword/agent.sock"
+export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
